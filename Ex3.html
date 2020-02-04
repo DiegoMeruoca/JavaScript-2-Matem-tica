@@ -1,0 +1,23 @@
+<html lang=“pt-br”>
+	<head>
+		<title>Curso de Javascript</title>
+		<meta charset=“UTF-8”>
+		<script>
+			//Declarando a variavel
+			let preco, porcentagem, desconto, novopreco;
+			//Obtendo dados atraves do prompt
+			preco = parseFloat(prompt("Por favor digite o preço do produto:"));
+			porcentagem = parseFloat(prompt("Por favor digite a % de desconto:"));
+			//Realizando os calculos
+			desconto = preco * porcentagem/100;
+			novopreco = preco - desconto;
+			//Escrevendo a informção obtida no documento
+			document.write("O valor do desconto é R$ "+desconto.toFixed(2)+"!!!<br>");
+			//O .toFixed(2) faz com que o valor seja corrijdo para duas casas decimais
+			document.write("O preço com desconto é R$ "+novopreco.toFixed(2)+"!!!");
+		</script>
+	</head>
+	<body>
+		
+	</body>
+</html>

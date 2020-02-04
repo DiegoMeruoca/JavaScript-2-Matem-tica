@@ -1,0 +1,25 @@
+<html lang=“pt-br”>
+	<head>
+		<title>Desafio 2</title>
+		<meta charset=“UTF-8”>
+		<script>
+			//Declarando a variavel
+			let salario;
+			let porcentagem;
+			let aumento;
+			let novosalario;
+			//Obtendo dados atraves do prompt
+			salario = parseFloat(prompt("Por favor digite o salario atual: ","Digite aqui"));
+			porcentagem = parseFloat(prompt("Por favor digite a porcentagem de aumento: ","Digite somente os números..."));
+			//Realizando os calculos
+			aumento = salario * porcentagem/100;
+			novosalario = eval(salario) + eval(aumento);
+			//Escrevendo a informção obtida no documento
+			document.write("O valor do aumento é R$ "+aumento.toFixed(2)+"!!!<br>");
+			document.write("O novo salário é R$ "+novosalario.toFixed(2)+"!!!");
+		</script>
+	</head>
+	<body>
+		
+	</body>
+</html>
